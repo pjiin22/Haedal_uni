@@ -1,0 +1,192 @@
+/*예약 현황 페이지*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* 전체 레이아웃 */
+.frame {
+  display: grid;
+  grid-template-columns: 253px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    'header header'
+    'nav    main';
+  height: 100vh;
+}
+
+/* 헤더 */
+.frame-wrapper {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #ffffff;
+  height: 60px;
+}
+.element {
+  width: 47px;
+  height: 47px;
+}
+.text-wrapper {
+  font-size: 18px;
+  font-weight: 700;
+  color: #543c52;
+}
+.frame-wrapper .div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.frame-wrapper .text-wrapper {
+  position: static;
+  margin: 0;
+}
+
+/* 사이드 네비게이션 */
+.div-2 {
+  grid-area: nav;
+  background-color: #361d32;
+  color: #ffffff;
+  padding-top: 6px;
+  overflow-y: visible;
+}
+
+/* 기본 그룹 타이틀 */
+.sidebar-button.group-title {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: 12px 1px 12px 14px;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.7;
+  color: #ffffff;
+  text-align: left;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 그룹 타이틀 - 선택된 상태 (ex. 마이페이지) */
+.sidebar-button.group-title.active {
+  background-color: #edd2cb;
+  color: #543c52;
+  opacity: 0.8;
+}
+
+/* 서브 메뉴 버튼 */
+.sidebar-sub {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px 8px 32px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+}
+
+/* 서브 메뉴 호버 */
+.sidebar-sub:hover:not(.active-sub) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 서브 메뉴 - 선택된 상태 (ex. 예약 현황) */
+.sidebar-sub.active-sub {
+  background-color: #edd2cb;
+  color: #543c52;
+  font-weight: 700;
+  border-left: 4px solid #543c52;
+  opacity:0.8;
+}
+
+
+/* 배너 */
+.div-7 {
+  grid-area: main;
+  background-color: #edd2cb;
+  height: 170px; /* 고정된 높이 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px; /* 왼쪽 정렬 맞춤 */
+  box-sizing: border-box;
+}
+.text-wrapper-5 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  color: #543c52;
+}
+.text-wrapper-6 {
+  font-size: 17px;
+  margin-top: 8px;
+  color: #543c52;
+}
+
+/* 메인 콘텐츠 */
+.frame-wrapper-6 {
+  grid-area: main;
+  overflow-y: auto;
+}
+.reservation-wrapper {
+  padding: 30px 40px 0 40px;
+}
+.reservation-box {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+.reservation-box h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #543c52;
+}
+.reservation-box ul {
+  margin-top: 12px;
+  line-height: 1.8;
+  color: #333;
+  padding-left: 20px;
+}
+
+/* 버튼 */
+.reservation-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+.btn-action {
+  all: unset;
+  padding: 10px 16px;
+  border: 2px solid #543c52;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #543c52;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-action:hover {
+  background-color: rgba(84, 60, 82, 0.1);
+}
+.btn-action.primary {
+  background-color: #543c52;
+  color: #ffffff;
+}
+.btn-action.primary:hover {
+  background-color: #6a506c;
+}
