@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>마이페이지 – Kyungpook University</title>
+
+    <!-- 전역 스타일 -->
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- 페이지 전용 -->
+    <link rel="stylesheet" href="mypage.css" />
+  </head>
+
+  <body>
+    <div class="frame">
+      <!-- 1) 헤더 -->
+      <header class="frame-wrapper">
+        <div class="div-wrapper">
+          <div class="div">
+            <img
+              class="element"
+              src="kyungpook_emblem.jpg"
+              alt="경북대학교 교표"
+            />
+            <div class="text-wrapper">
+              Kyungpook University
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2) 사이드 네비게이션 -->
+      <nav class="div-2">
+        <div class="frame-wrapper-2">
+          <div class="frame-wrapper-3">
+            <div class="div-3">
+              <div class="rectangle"></div>
+              <div class="rectangle-wrapper">
+                <div class="rectangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-wrapper-4">
+          <div class="frame-wrapper-5">
+            <div class="div-4">
+              <div class="div-wrapper-2">
+                <button class="sidebar-button group-title">메인</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-button group-title">강의실 목록</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-sub">└ IT 1호관</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-sub">└ IT 5호관</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-button group-title active">마이페이지</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-sub">└ 예약 현황</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-sub">└ 사용 현황</button>
+              </div>
+              <div class="div-wrapper-2">
+                <button class="sidebar-sub">└ 보증 포인트</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- 3) 메인 콘텐츠 -->
+      <main class="frame-wrapper-6">
+        <div class="frame-wrapper-7">
+          <div class="div-6">
+            <!-- 3-1) 배너 -->
+            <section class="div-7">
+              <h1 class="text-wrapper-5">마이 페이지</h1>
+            </section>
+
+            <!-- 3-2) 프로필·탭·콘텐츠 래퍼 -->
+            <div class="frame-wrapper-8">
+              <!-- 프로필 -->
+              <div class="profile-wrapper">
+                <img
+                  class="profile-img"
+                  src="profile.png"
+                  alt="사용자 프로필"
+                />
+                <div class="profile-name">
+                  권민서 (컴퓨터학부)
+                </div>
+              </div>
+
+              <!-- 탭 버튼 -->
+              <div class="tab-bar">
+                <button
+                  class="tab-button"
+                  data-tab="reservation"
+                >
+                  예약 현황 <span class="badge">0</span>
+                </button>
+                <button
+                  class="tab-button"
+                  data-tab="usage"
+                >
+                  사용 현황 <span class="badge">0</span>
+                </button>
+                <button
+                  class="tab-button"
+                  data-tab="points"
+                >
+                  보증 포인트 <span class="badge">0</span>
+                </button>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    
+  </body>
+</html>
