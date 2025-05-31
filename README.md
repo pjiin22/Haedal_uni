@@ -210,11 +210,14 @@ Frontend\
 
 ## ►API명세서
 
+![API 명세서](docs/images/api-spec.png)
 
 
 ---
 
 ## ►DataBase구조
+
+![ERD](docs/images/erd.png)
 
 
 ---
