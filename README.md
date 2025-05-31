@@ -96,7 +96,7 @@
 
 ## ►사용 기술 스택
 
-- Frontend : HTML, JavaScript, CSS, V0.dev
+- Frontend : HTML, JavaScript, CSS
 - Backend : Python
 - Database : MySQL
 - AI : Python, Pandas, CSV 기반 간단 예측
