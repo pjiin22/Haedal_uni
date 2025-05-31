@@ -268,43 +268,37 @@ Frontend\
 | 🗄️ **DB** | MySQL 서버에 사용자, 예약, 강의실, 시간표 데이터 저장 |
 | 🤖 **AI (OCR)** | 업로드 사진 내 강의실 번호 텍스트 인식 및 검증 |
 
-[timetable_db.csv](attachment:b4ab0513-8cec-4abc-b95b-bc798c01159f:timetable_db.csv)
-
-[user_db.csv](attachment:a9c019b7-6dd2-4307-8fb5-a96eac615d3b:user_db.csv)
-
-[class_db.csv](attachment:2299c0a1-4702-4ff8-be86-e2215c9323fd:class_db.csv)
-
 ---
 
-LECTURE/
-├── .env                             # 환경변수 파일 (DB URL, SECRET_KEY 등)
-├── crawler.py                       # 강의 시간표 크롤링 스크립트 (Selenium 사용)
+LECTURE/\
+├── .env                             # 환경변수 파일 (DB URL, SECRET_KEY 등)\
+├── crawler.py                       # 강의 시간표 크롤링 스크립트 (Selenium 사용)\
 
-├── app/
-│   ├── core/                        # 핵심 로직 구성 요소
-│   │   ├── main.py                  # FastAPI 애플리케이션 진입점
-│   │   ├── database.py              # DB 연결 및 세션 설정
-│   │   ├── jwt_handler.py           # JWT 발급 및 검증
-│   │   ├── models.py                # SQLAlchemy 모델 정의
-│   │   └── schemas.py               # Pydantic 스키마 정의
+├── app/\
+│   ├── core/                        # 핵심 로직 구성 요소\
+│   │   ├── main.py                  # FastAPI 애플리케이션 진입점\
+│   │   ├── database.py              # DB 연결 및 세션 설정\
+│   │   ├── jwt_handler.py           # JWT 발급 및 검증\
+│   │   ├── models.py                # SQLAlchemy 모델 정의\
+│   │   └── schemas.py               # Pydantic 스키마 정의\
 │
-│   ├── routers/                     # API 라우터 모듈
-│   │   ├── auth.py                  # 사용자 인증 관련 API
-│   │   ├── reservation.py           # 예약 기능 관련 API
-│   │   ├── point.py                 # 포인트 관리 API
-│   │   ├── class_info.py            # 강의실 상세정보 제공
-│   │   ├── class_list.py            # 강의실 목록 반환
+│   ├── routers/                     # API 라우터 모듈\
+│   │   ├── auth.py                  # 사용자 인증 관련 API\
+│   │   ├── reservation.py           # 예약 기능 관련 API\
+│   │   ├── point.py                 # 포인트 관리 API\
+│   │   ├── class_info.py            # 강의실 상세정보 제공\
+│   │   ├── class_list.py            # 강의실 목록 반환\
 
-│   │   ├── predict.py            # 빈 강의실 확률 API
-│   │   └── house_select.py          # 건물 선택 API
+│   │   ├── predict.py            # 빈 강의실 확률 API\
+│   │   └── house_select.py          # 건물 선택 API\
 │
-│   ├── services/                    # 서비스 로직
-│   │   ├── in_image.py              # 입실 인증 이미지 처리
-│   │   └── out_image.py             # 퇴실 인증 이미지 처리
+│   ├── services/                    # 서비스 로직\
+│   │   ├── in_image.py              # 입실 인증 이미지 처리\
+│   │   └── out_image.py             # 퇴실 인증 이미지 처리\
 │
-│   └── utils/                       # 유틸성 모듈
-│       ├── probability.py           # 빈 강의실 확률 계산
-└── total.py                 # 통합 계산 및 기타 함수
+│   └── utils/                       # 유틸성 모듈\
+│       ├── probability.py           # 빈 강의실 확률 계산\
+└── total.py                 # 통합 계산 및 기타 함수\
 
 ## ►확장 가능성 및 마무리
 
