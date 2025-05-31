@@ -170,39 +170,39 @@
 
 ---
 
-Frontend
-├── classroom-page1.css
-├── classroom-page1.html
-├── classroom-page1.js
-├── classroom-page2.css
-├── classroom-page2.html
-├── classroom-page2.js
-├── classroom-search1.css
-├── classroom-search1.html
-├── classroom-search1.js
-├── classroom-search2.css
-├── classroom-search2.html
-├── classroom-search2.js
-├── guage-fix.js
-├── kyungpook_emblem.jpg
-├── login.css
-├── login.html
-├── login.js
-├── mainmenu.css
-├── mainmenu.html
-├── mainmenu.js
-├── mascot.png
-├── mypage.css
-├── mypage.html
-├── mypage.js
-├── point.css
-├── point.html
-├── point.js
-├── profile.png
-├── structure.txt
-├── usage-history.css
-├── usage-history.html
-└── usage-history.js
+Frontend\
+├── classroom-page1.css\
+├── classroom-page1.html\
+├── classroom-page1.js\
+├── classroom-page2.css\
+├── classroom-page2.html\
+├── classroom-page2.js\
+├── classroom-search1.css\
+├── classroom-search1.html\
+├── classroom-search1.js\
+├── classroom-search2.css\
+├── classroom-search2.html\
+├── classroom-search2.js\
+├── guage-fix.js\
+├── kyungpook_emblem.jpg\
+├── login.css\
+├── login.html\
+├── login.js\
+├── mainmenu.css\
+├── mainmenu.html\
+├── mainmenu.js\
+├── mascot.png\
+├── mypage.css\
+├── mypage.html\
+├── mypage.js\
+├── point.css\
+├── point.html\
+├── point.js\
+├── profile.png\
+├── structure.txt\
+├── usage-history.css\
+├── usage-history.html\
+└── usage-history.js\
 
 ---
 
@@ -210,15 +210,12 @@ Frontend
 
 ## ►API명세서
 
-[https://www.notion.so/API-202216582f70801b8d08c2a9502b6888?source=copy_link](https://www.notion.so/4-1-API-202216582f70801b8d08c2a9502b6888?pvs=21)
 
-![image.png](attachment:629d80aa-606d-4ef9-935c-67d7310ac838:image.png)
 
 ---
 
 ## ►DataBase구조
 
-![스크린샷 2025-05-31 13.27.34.png](attachment:c59395d8-89d3-49e5-900e-a2cac287b1ad:스크린샷_2025-05-31_13.27.34.png)
 
 ---
 
